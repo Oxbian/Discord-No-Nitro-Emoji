@@ -1,0 +1,23 @@
+{
+	"manifest_version": 2,
+	"author": "Oxbian",
+	"developer": {
+		"name": "Oxbian",
+		"url": "https://arka.rocks"
+	},
+	"version": "1.1",
+	"name": "Discord No Nitro Emoji",
+	"permissions": [
+		"clipboardWrite"
+	],
+	"content_scripts": [
+		{
+			"matches": [
+				"*://discord.com/*"
+			],
+			"js": [
+				"main.js"
+			]
+		}
+	]
+}
