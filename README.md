@@ -18,7 +18,7 @@ The addons can be installed from the page
 `about:debugging#/runtime/this-firefox`, then click on the button `Load
 Temporary Add-On`, and choose the discord-no-nitro-emoji zip file.  
   
-The zip file can be obtained from github packages or by packaging the extensions
+The zip file can be obtained from github releases or by packaging the extensions
 directly from the source code.
 
 ## Packaging
@@ -27,7 +27,7 @@ For packaging the project, use this command:
 
 ```bash
 export VERSION=1.2
-zip -r -FS ../discord-no-nitro-emoji-$VERSION.zip icons/ manifest.json main.jsA
+zip -r -FS ../discord-no-nitro-emoji-$VERSION.zip icons/ manifest.json main.js
 ```
 
 ## Version
