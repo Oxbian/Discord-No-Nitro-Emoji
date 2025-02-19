@@ -1,10 +1,6 @@
 {
-	"manifest_version": 2,
+	"manifest_version": 3,
 	"author": "Oxbian",
-	"developer": {
-		"name": "Oxbian",
-		"url": "https://arka.rocks"
-	},
 	"version": "1.2",
 	"name": "Discord No Nitro Emoji",
 	"description": "Send any emojis everywhere on discord without having Nitro",
@@ -15,10 +11,13 @@
 	"permissions": [
 		"clipboardWrite"
 	],
+	"host_permissions": [
+		"https://discord.com/*"
+	],
 	"content_scripts": [
 		{
 			"matches": [
-				"*://discord.com/*"
+				"https://discord.com/*"
 			],
 			"js": [
 				"main.js"
