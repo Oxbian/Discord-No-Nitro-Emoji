@@ -20,6 +20,7 @@ by packaging the extensions directly from the source code.
 
 ### Firefox
 
+The extension is now available on the [Firefox Add-ONS website](https://addons.mozilla.org/en-US/firefox/addon/discord-no-nitro-emoji/).
 The addons can be installed from the page
 `about:debugging#/runtime/this-firefox`, then click on the button `Load
 Temporary Add-On`, and choose the discord-no-nitro-emoji zip file.  
