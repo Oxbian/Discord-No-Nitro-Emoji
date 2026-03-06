@@ -4,9 +4,9 @@ const emojiPickerObserver = new MutationObserver(() => {
     // Select objects to remove
     const selectors = [
         '#emoji-picker-grid ul li button [class^="emojiLockIconContainer"]',
-        "div[class*='emojiPicker'] div[class*='hasTabParentContainer']",
-        "div[class*='emojiPicker'] div[class*='backdrop']",
-        "[class^='upsellContainer']"
+        "div[class*='categoryItem'] div[class*='categoryItemLockIconContainer']",
+        "div[class*='nitro-pink']",
+        "div[class*='scrim']",
     ];
 
     // Search and delete objects
@@ -32,7 +32,10 @@ const emojisObserver = new MutationObserver(() => {
 
             btn.addEventListener("click", (e) => {
                 let source = e.currentTarget.querySelector("img").getAttribute('src');
-                copyTextToClipboard(source);
+
+                // Format string for easier copy and paste
+                let formattedString = "[.](" + source.toString() + ")"
+                copyTextToClipboard(formattedString.toString());
             });
         });
 });
@@ -48,7 +51,10 @@ document.addEventListener("click", function(event) {
             let source = emojiImage.getAttribute('src');
             let parsedUrl = new URL(source);
             parsedUrl.searchParams.set("size", "48");
-            copyTextToClipboard(parsedUrl.toString());
+
+            // Format string for easier copy and paste
+            let formattedString = "[.](" + parsedUrl.toString() + ")"
+            copyTextToClipboard(formattedString.toString());
         }
     }
 });

@@ -14,12 +14,11 @@ Why paying for just using some links ....
 To use this extension, just click on the emojis you want in the chat or discord
 emojis menu and paste the link in the chat.  
   
-**Be careful, discord only render the picture if the link is lonely in a
-message**  
-*Tips: You can use markdown image to include your emoji in your message*
-```markdown
-Your message [.](YOUR EMOJI LINK HERE)
-```
+> [!IMPORTANT]
+> Discord only render the picture if the link is lonely in a message
+
+> [!TIP]
+> You can use markdown image to include your emoji in your message. This extension use markdown links to include the emoji seemlessly inside the chat, just paste it
 
 ## Installing
 
@@ -51,7 +50,7 @@ the discord-no-nitro-emoji unzipped folder.
 For packaging the project, use this command:
 
 ```bash
-export VERSION=1.2
+export VERSION=1.3
 zip -r -FS ../discord-no-nitro-emoji-$VERSION.zip icons/ manifest.json main.js
 ```
 
@@ -60,6 +59,7 @@ zip -r -FS ../discord-no-nitro-emoji-$VERSION.zip icons/ manifest.json main.js
 V1: copy emoji from emoji menu into the clipboard  
 V1.1: copy emoji from chat into the clipboard  
 V1.2: code refactored + optimized  
+V1.3: update for new discord popup + improve UX
 
 ## License
 
